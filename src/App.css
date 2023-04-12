@@ -9,7 +9,7 @@
 
 }
 
-/*GENERAL APP STYLING*/
+/* GENERAL APP STYLING */
 
 
   body {
@@ -17,7 +17,7 @@
 }
 
 #title {
-  height: 200px;
+  height: 175px;
   width: 1000px;
   padding-left: 200px;
 }
@@ -33,107 +33,42 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-
-
-
-.dashboard{
- 
-  background-image: linear-gradient(to right, rgb(233, 165, 38) , rgb(0, 255, 255));
-  font-size:100px;
-  font-family: fantasy;
-  border-radius: 25px;
-  width: 700px;
-  height: 400px;
-  line-height:400px;
+h2{
+  border-radius: 10px;
+  background-image: linear-gradient(rgb(233, 165, 38), rgb(0, 255, 255));
   text-align: center;
-  float:left;
-  transform: scale(0.9);
-  transition-duration: 0.5s;
-  margin-bottom:50px;
-  margin-left:10px;
-  margin-top:0px;
-
-}
-
-.dashboard:hover {
-transform: scale(1.01);
-transition-duration: 0.5s;
-}
-
-
-/*LOGIN PAGE*/
-.createe{
-  height:100px;
-  width: 1400px;
-  margin-bottom:200px;
-}
-
-
-
-
-.dashboard{
- 
-      background-image: linear-gradient(to right, rgb(233, 165, 38) , rgb(0, 255, 255));
-      font-size:100px;
-      font-family: fantasy;
-      border-radius: 25px;
-      width: 600px;
-      height: 400px;
-      line-height:400px;
-      text-align: center;
-      float:left;
-      transform: scale(0.9);
-      transition-duration: 0.5s;
-      margin-bottom:50px;
-      margin-left:5px;
-      margin-top:0px;
-    
-}
-
-.dashboard:hover {
-  transform: scale(1.01);
-  transition-duration: 0.5s;
-}
-
-.dashboard:link{
-
-}
-
-
-
-.hrother{
-    color:white;
-  
-    
-}
-
-.hrindex{
-    color:black;
-}
-
-#links{
-  background-image: linear-gradient(to right, rgb(233, 165, 38) , rgb(0, 255, 255));
-  font-size:20px;
   font-family: fantasy;
-  border-radius: 25px;
-  width: 200px;
-  height:400px;
-  line-height:100px;
-  text-align: center;
-  float:left;
+  font-size: 50px;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 
-#login_box {
-  border-radius: 50px;
-  background-image: linear-gradient(to right, rgb(233, 165, 38), rgb(0, 255, 255));
-  width: 1200px;
-  height: 600px;
-  margin-left: 100px;
+
+hr{
+  background-color:black;
+  color:black;
+  height:2px;
+  border-color:black;
+  width:500px;
+}
+
+
+
+.error{
+  color:red;
+  font-size:50px;
+  text-align:center;
+  margin-top:50px;
+  font-family: fantasy;
+  height:50px;
+
 }
 
 #login,
-#create_account {
+#create_account, #join_course, #create_course {
   border: none;
   background-color: inherit;
   font-size: 50px;
@@ -149,6 +84,56 @@ transition-duration: 0.5s;
   opacity: 1.0;
 }
 
+
+
+button{
+  opacity: 0.25;
+}
+
+
+#gradient_delete, #gradient_create, #gradient{
+  background-image: linear-gradient(to right, rgb(233, 165, 38), rgb(0, 255, 255));
+  opacity: 1.0;
+  border-radius:10px;
+  width:100px;
+  height:50px;
+  font-size:20px;
+  margin-left:70px;
+}
+
+#gradient_create{
+  margin-left:260px;
+}
+
+#gradient{
+  margin-left:0px;
+}
+
+/* LOGIN PAGE */
+
+#login_box{
+  border-radius: 50px;
+  background-image: linear-gradient(to right, rgb(233, 165, 38), rgb(0, 255, 255));
+  width: 1200px;
+  height: 800px;
+  margin-left: 100px;
+}
+
+#create_submit, #login_submit{
+  opacity:1.0;
+  font-size:40px;
+  margin-top:100px;
+  margin-left:475px;
+  border-radius:10px;
+}
+
+
+#login_submit{
+  margin-left: 550px;
+
+}
+
+
 .prompt_box {
   margin-top: 40px;
   text-align: center;
@@ -163,80 +148,74 @@ transition-duration: 0.5s;
   border: 10px;
 }
 
-h2{
-  color:black;
-}
-
-button{
-  opacity: 0.25;
-}
 
 
-#create_submit{
-  opacity:1.0;
-  font-size:40px;
-  margin-top:100px;
-  margin-left:475px;
-  border-radius:10px;
-}
 
-#login_submit{
-  opacity:1.0;
-  font-size:40px;
-  margin-top:100px;
-  margin-left:550px;
-  text-align:center;
-  border-radius:10px;
-}
+/* DASHBOARD */
 
-hr{
-  background-color:black;
-  color:black;
-  height:2px;
-  border-color:black;
-  width:500px;
-}
-
-
-/*courses*/
-
-.coursebuttons{
-  font-size:40px;
-  width:200px;
-  opacity:1.0;
-  margin:100px;
-  height:100px;
-  background-image: linear-gradient(rgb(233, 165, 38), rgb(0, 255, 255));
-  transform: scale(0.9);
+.dashboard{
+  
+      background-image: linear-gradient(to right, rgb(233, 165, 38) , rgb(0, 255, 255));
+      font-size:100px;
+      font-family: fantasy;
+      border-radius: 25px;
+      width: 600px;
+      height: 400px;
+      line-height:400px;
+      text-align: center;
+      float:left;
+      transform: scale(0.9);
       transition-duration: 0.5s;
+      margin-bottom:50px;
+      margin-left:50px;
+      margin-top:0px;
+    
 }
 
-.coursebuttons, .create:hover{
-  transform: scale(1.1);
+.dashboard:hover {
+  transform: scale(1.01);
   transition-duration: 0.5s;
 }
 
-td{
-  border-radius: 10px;
-  background-image: linear-gradient(rgb(233, 165, 38), rgb(0, 255, 255));
-  text-align: center;
-  font-family: fantasy;
-  font-size: 50px;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-
-}
-
-tr{
-  height:100px;
+#content{
   float:left;
+
+}
+
+
+
+/* COURSES */
+
+#created_courses{
+  width: 650px;
+  float:left;
+  color:white;
+}
+
+#create_course_form{
+  width:650px;
+  float: left;
+  color:white;
+}
+
+#create_course_form input{
+  width:500px;
+  height:50px;
+  border-radius:10px;
+  color:black;
+  font-size:30px;
+  margin-left:80px;
+}
+
+#description{
+  font-size:20px;
 }
 
 
 
 
+
+/* ACCOUNT PAGE */
 
 #yes,
 #no{
@@ -251,102 +230,71 @@ tr{
   background-image: linear-gradient(rgb(233, 165, 38), rgb(0, 255, 255));
 
   cursor:pointer;
+  border-radius:25px;
 }
 
 #log{
   color:white;
 }
 
-h3{
-   color:white;
-}
 
-#first{
-  width:500px;
 
-}
+/* NAVBAR */
 
-#second{
-  width: 900px;
-}
-
-#assignments, #files, #progress_grades, #progress_growth{
-  opacity:1.0;
-  color:white;
-}
-
-#work_button{
-  opacity:1.0;
-  font-size:40px;
-  width:300px;
+#nav {
+  color: black;
+  background-image: linear-gradient(rgb(233, 165, 38), rgb(0, 255, 255));
+  width: 100%;
+  height: 80px;
   font-family: Fantasy;
+  font-size: 30px;
+  border-radius: 50px;
+}
+
+#navtext a{
+  margin-left:70px;
+  line-height: 80px;
+}
+
+
+/* CREATE */
+#make_post{
   color:white;
-  cursor:pointer;
+  text-align:center;
+  font-size:50px;
+}
+
+
+/* POSTS*/
+
+#view_posts{
+  text-align:center;
+}
+
+#post{
+  width:700px;
+  color:black;
+  background-image: linear-gradient(rgb(233, 165, 38), rgb(0, 255, 255));
   border-radius:25px;
+  float:left;
+  margin-left:350px;
+  margin-bottom:100px;
+}
+
+#delete{
+  float:left;
+  margin-left:20px;
+}
+
+#show_answer{
   background-color:black;
-}
-
-#work_box{
-  width:1000px;
-  height:500px;
-  background-image: linear-gradient(rgb(233, 165, 38), rgb(0, 255, 255));
-  border-radius:50px;
-}
-
-#nav{
   color:white;
-  background-image: linear-gradient(rgb(233, 165, 38), rgb(0, 255, 255));
-  width:15%;
-  height:400px;
-  font-family:Fantasy;
-  font-size:30px;
-  float:left;
-  border-radius:50px;
-  
-  
-}
-
-.create{
-  background-image: linear-gradient(rgb(233, 165, 38), rgb(0, 255, 255));
-  border-radius:50px;
-  width:300px;
-  height:100px;
-  transform: scale(0.9);
-      transition-duration: 0.5s;
-      text-align:center;
-      line-height:100px;
-      color:black;
-}
-
-
-#content{
-  float:left;
-
-}
-
-.prog{
-  height:500px;
-}
-
-#progress_display{
-  width:500px;
-  background-image: linear-gradient(rgb(233, 165, 38), rgb(0, 255, 255));
   opacity:1.0;
-}
-
-#progress_grades, #progress_growth{
-  background-color:black;
-}
-
-#display_box{
-  
-  width:600px;
-  height:600px;
-  background-image: linear-gradient(rgb(233, 165, 38), rgb(0, 255, 255));
-}
-
-#social{
-  background-color:black;
-  border-radius:20px;
+  border-radius:25px;
+  height:50px;
   width:200px;
+  font-size:20px;
+
+
 }
+

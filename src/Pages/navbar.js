@@ -4,36 +4,22 @@ const Navbar= () => {
   return (
     <>
       <nav>
-        <ul>
-
-        <li>
-            <Link to="/">Dashboard</Link>
-          </li>
-        <li>
-            <Link to="/courses">Courses</Link>
-          </li>
-          <li>
-            <Link to="/work">Work</Link>
-          </li>
+     
+       
+            <div id="navtext">
+            <a><Link to="/">Dashboard</Link></a>
+         
+            <a><Link to="/courses">Courses</Link></a>
           
-          <li>
-            <Link to="/create">Create</Link>
-          </li>
-          <li>
-            <Link to="/progress">Progress</Link>
-          </li>
-          <li>
-            <Link to="/social_hub">Social Hub</Link>
-          </li>
-          <li>
-            <Link to="/wallet">Wallet</Link>
-          </li>
+            <a><Link to="/posts">Posts</Link></a>
 
-          <li>
-            <Link to="/account">Account</Link>
-          </li>
+            <a><Link to="/create">Create</Link></a>
           
-        </ul>
+          
+           <a><Link to="/account">Account</Link></a>
+
+            </div>
+         
       </nav>
 
       <Outlet />
